@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#150f2b"/>
+      <stop offset="1" stop-color="#0a0a12"/>
+    </linearGradient>
+    <linearGradient id="bubble" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="spark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+
+  <!-- chat bubble -->
+  <path d="M96 128 Q96 96 128 96 H384 Q416 96 416 128 V336 Q416 368 384 368 H224 L144 440 Q118 456 116 424 L116 368 H128 Q96 368 96 336 Z" fill="url(#bubble)" opacity="0.95"/>
+  <path d="M96 128 Q96 96 128 96 H384 Q416 96 416 128 V336 Q416 368 384 368 H224 L144 440 Q118 456 116 424 L116 368 H128 Q96 368 96 336 Z" fill="none" stroke="#e8e4ff" stroke-width="8" opacity="0.25"/>
+
+  <!-- three chat dots -->
+  <circle cx="192" cy="232" r="26" fill="#0a0a12"/>
+  <circle cx="256" cy="232" r="26" fill="#0a0a12"/>
+  <circle cx="320" cy="232" r="26" fill="#0a0a12"/>
+
+  <!-- AI spark -->
+  <g transform="translate(388,60) scale(1.35)">
+    <path d="M0 26 L9 9 L26 0 L9 -9 L0 -26 L-9 -9 L-26 0 L-9 9 Z" fill="url(#spark)" stroke="#0a0a12" stroke-width="4"/>
+  </g>
+  <g transform="translate(96,404) scale(0.9)">
+    <path d="M0 26 L9 9 L26 0 L9 -9 L0 -26 L-9 -9 L-26 0 L-9 9 Z" fill="url(#spark)" opacity="0.9" stroke="#0a0a12" stroke-width="4"/>
+  </g>
+</svg>

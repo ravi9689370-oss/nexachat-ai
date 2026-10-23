@@ -1,0 +1,12 @@
+{
+  "appId": "com.nexachat.app",
+  "appName": "NexaChat",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "android": {
+    "buildOptions": {
+      "keystorePath": null,
+      "keystoreAlias": null
+    }
+  }
+}

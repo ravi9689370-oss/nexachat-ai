@@ -1,0 +1,18 @@
+{
+  "name": "nexachat-ai",
+  "version": "1.0.0",
+  "description": "NexaChat AI - LLM chatbot powered by OpenRouter (your key, your device)",
+  "scripts": {
+    "build": "mkdir -p www && cp -r index.html manifest.json sw.js privacy-policy.html css js assets www/",
+    "cap:sync": "npm run build && npx cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/cli": "^6.0.0",
+    "@capacitor/core": "^6.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "sharp": "^0.33.0"
+  }
+}
